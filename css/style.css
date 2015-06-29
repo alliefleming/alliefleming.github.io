@@ -2,6 +2,7 @@
 
 body {
 	padding: 100px;
+	color: #555;
 }
 
 h1, h2, h3 {
@@ -19,6 +20,16 @@ p {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
 	line-height: 140%;
+}
+
+a:link {
+	color: #000;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+img {
+	border:1px solid #009900;
 }
 
 /* html styling end*/
