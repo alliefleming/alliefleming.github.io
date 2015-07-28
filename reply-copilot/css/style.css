@@ -1,3 +1,17 @@
+/* UTILITY CLASS */
+.text-black {
+	color: #777;
+}
+.text-blue {
+	color: #272e39;
+}
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+/* END UTILITY CLASS */
 /* html styling */
 body {
 	background-image: url('../images/background.png');
@@ -10,17 +24,21 @@ body {
 i {
 	padding: 5px;
 }
+footer {
+	height: 50px;
+	background-color: #f8f8f8;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	position:fixed;
+	left:0px;
+	bottom:0px;
+	width:100%;
+}
 /* html styling end*/
 
 /* classes */
-.navbar {
-	border-radius: 0px;
-	border-style: none;
-	background-color: #272e39;
-	height: 60px;
-}
-.navbar-nav li a {
-	text-transform: uppercase;
+.navbar-nav {
+	float: right;
 }
 /*
 .container {
