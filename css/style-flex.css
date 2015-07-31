@@ -32,10 +32,13 @@ i {
 /* html styling end*/
 
 /* classes */
-.container {
-	width: 100%;
-	max-width: 1024px;
-	margin: 0 auto;
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.site-content {
+  flex: 1;
 }
 .center {
 	text-align: center;

@@ -1,9 +1,19 @@
 /* UTILITY CLASS */
+.spacer {
+	margin-top: 40px;
+	display: block;
+}
 .text-black {
 	color: #777;
 }
+.text-white {
+	color: #fff;
+}
 .text-blue {
 	color: #272e39;
+}
+.text-green {
+	color: #78b349;
 }
 .text-left {
 	text-align: left;
@@ -20,6 +30,13 @@ body {
     background-attachment:fixed;
     background-size: cover;
     color: white;
+}
+a	{
+	color: #777;
+}
+a:hover {
+	text-decoration: none;
+	color: #333;
 }
 i {
 	padding: 5px;
