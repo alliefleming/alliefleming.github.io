@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Reply Pilot</title>
+    <title>Reply Copilot</title>
     <!-- Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
@@ -39,12 +39,57 @@
 		        <img class="hidden-xs" alt="Reply Copilot" src="images/reply-copilot-logo.svg" height="24">
 		      </a>
 				<ul class="nav navbar-nav">
-				  <li role="presentation"><a href="about.html">About</a></li>
-				  <li role="presentation"><a href="#">Resources</a></li>
+				  <li role="presentation"><a data-toggle="modal" data-target="#aboutModal">About</a></li>
+				  <li role="presentation"><a href="resources.html">Resources</a></li>
 				</ul>
 		  </div>
 		</nav>
 	<div class="container">
+		<!-- About Modal -->
+		<div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutModal">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="aboutModal">About Reply Copilot</h4>
+		      </div>
+		      <div class="modal-body">
+		    	    <div class="row">
+					    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+							<p class="text-black">Reply Copilot is a response generator designed to assist with customer feedback and online community management. Combing through thousands of online reviews and social comments is a difficult task for many social media professionals, and thinking of unique replies to each response can easily wear down the most tenacious of copywriters.</p>
+							<p class="text-black">Considered an industry-wide best practice, replying to each review, or social media post, shows consumers that a brand cares enough about their audience to engage them on a personal level. There is also the added benefit of keywords. It usually takes a team of community managers and strict brand messaging guidelines to respond to all feedback. Now, with Reply Copilot, you can reply with thousands of sentiment-based responses, each specifically targeted based on the Net Promotor Score.</p>
+							<p class="text-black">Developed through a Startup Institute partnership with online review management software provider ReviewTrackers, this tool is free for anyone to use.</p>
+							<p class="text-black">Suggestions for responses? Questions? Send them here: <a href="mailto:contact@replycopilot.com">contact@replycopilot.com</a></p>
+							<div class="row">
+								<div class="col-xs-6">
+									<h3 class="text-green">Team</h3>
+									<ul class="text-black">
+										<li>Allie Fleming</li>
+										<li>Beth Mingledorff</li>
+										<li>Justin Schoen</li>
+										<li>Richard Kwarteng</li>
+										<li>Shiovhan Boykin</li>
+									</ul>
+								</div>
+								<div class="col-xs-6">
+									<h3 class="text-green">Partners</h3>
+									<ul class="text-black">
+										<li>Brian Sparker</li>
+										<li>Chris Campbell</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+				    </div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- End About Modal -->
+
 		<div class="row">
 			<div class="spacer">&nbsp;</div>
 		</div>
@@ -59,26 +104,60 @@
 						<label for="exampleInputEmail1">Your Email</label>
 						<input type="password" class="form-control" id="exampleInputEmail1" placeholder="example@website.com">
 					</div>
-<!--
+					<!--
 					<div class="checkbox">
 						<label>
 						  <input type="checkbox"> Opt in to our email list
 						</label>
 					</div>
--->
+					-->
 					<h5>Type of Response 
-						  <a class="text-white" href="type-of-responses.html"><i class="fa fa-question-circle"></i></a>
+						  <a class="text-white" data-toggle="modal" data-target="#myModal"><i class="fa fa-question-circle"></i></a>
 					</h5>
-					<div class="btn-group btn-group-justified" role="group" aria-label="...">
-					  <div class="btn-group" role="group">
-					    <button type="button" class="btn btn-default">Positive</button>
+					<!-- Modal -->
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					        <h4 class="modal-title" id="myModalLabel">Type of Responses</h4>
+					      </div>
+					      <div class="modal-body">
+					        	    <div class="row">
+									    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+										<h3 class="text-green"><i class="fa fa-plus-circle"></i> Positive: “Promoters”</h3>
+									    <p class="text-black">These are highly loyal customers who conduct unprompted, repeat business and have no hesitation recommending the product or service to their friends, family, or colleagues (scores of nine and 10).</p>
+										<h3 class="text-red"><i class="fa fa-times-circle"></i> Negative: “Detractors”</h3>
+									    <p class="text-black">These are highly dissatisfied customers who are very unlikely to generate repeat business, much less give your business a verbal or written endorsement. These customers present a significant risk to your business organization since they are highly likely to give a negative reference about your business (scores of six and below).</p>
+										<h3 class="text-gray"><i class="fa fa-minus-circle"></i> Neutral: “Passives”</h3>
+									    <p class="text-black">These are satisfied but unenthusiastic customers, and your most vulnerable group since they can easily be persuaded to patronage the competition, should the competition be ready to bridge the experiential gap of what the customer wishes to receive and what you are delivering.</p>
+										<p class="text-black">Conversely, just as this group (with scores of seven and eight) can easily stop frequenting your business, the same group, but from your competitor’s client pool, presents a superior opportunity for your business to gain wallet share if you have the business savvy and offerings to coax them to your side by carefully deciphering your competitors’ shortcomings.</p>
+										<small>The Net Promoter Score is calculated by subtracting the percentage of detractors (customers that have rated your business with a NPS of 0-6) from the percentage of promoters (customers who have rated your business 9-10).</small>
+									    </div>
+								    </div>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					      </div>
+					    </div>
 					  </div>
-					  <div class="btn-group" role="group">
-					    <button type="button" class="btn btn-default">Negative</button>
-					  </div>
-					  <div class="btn-group" role="group">
-					    <button type="button" class="btn btn-default">Neutral</button>
-					  </div>
+					</div>
+					<!-- End Modal -->
+					<!-- Split button -->
+					<div class="btn-group">
+					  <button type="button" class="btn btn-default">Choose a response</button>
+					  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    <span class="caret"></span>
+					    <span class="sr-only">Toggle Dropdown</span>
+					  </button>
+					  <ul class="dropdown-menu">
+					    <li><a href="#"><i class="fa fa-plus-circle text-green"></i> Positive</a></li>
+					    <li role="separator" class="divider"></li>					    
+					    <li><a href="#"><i class="fa fa-times-circle text-red"></i> Negative</a></li>
+					    <li role="separator" class="divider"></li>
+					    <li><a href="#"><i class="fa fa-minus-circle text-gray"></i> Neutral</a></li>
+
+					  </ul>
 					</div>
 					<p style="line-height: 5px;">&nbsp;</p>
 					<div class="form-group">
@@ -93,6 +172,10 @@
 				</form>
 		    </div>
 	    </div>
+	    		<div class="row">
+			<div class="spacer">&nbsp;</div>
+		</div>
+
     </div>
 	<footer>
 		<div class="container">
@@ -105,13 +188,13 @@
 						<a href="https://www.facebook.com/replycopilot" target="_blank">
 							<i class="fa fa-lg fa-facebook-square"></i>
 						</a>
-						<a href="https://www.facebook.com/replycopilot" target="_blank">
-							<i class="fa fa-lg fa-linkedin-square"></i>
+						<a href="https://plus.google.com/u/0/105765359744046892959/posts" target="_blank">
+							<i class="fa fa-lg fa-google-plus-square"></i>
 						</a>
 					</p>
 				</div>
 				<div class="col-sm-6">
-						<p class="text-black text-right">
+						<p class="text-navy text-right">
 							<a href="http://www.reviewtrackers.com/terms-service/" target="_blank" title="Reply Copilot Terms of Service">
 								Terms of Service
 							</a>
@@ -120,8 +203,9 @@
 			</div>
 		</div>
 	</footer>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	    <script src="js/bootstrap.min.js"></script>
   </body>
-  <script src="js/bootstrap.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/npm.js"></script>
 </html>

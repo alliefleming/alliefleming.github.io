@@ -4,7 +4,13 @@
 	display: block;
 }
 .text-black {
+	color: #000;
+}
+.text-gray {
 	color: #777;
+}
+.text-navy {
+	color: #272e39;
 }
 .text-white {
 	color: #fff;
@@ -14,6 +20,9 @@
 }
 .text-green {
 	color: #78b349;
+}
+.text-red {
+	color: #e85e48;
 }
 .text-left {
 	text-align: left;
@@ -31,6 +40,9 @@ body {
     background-size: cover;
     color: white;
 }
+h4 {
+	color: #777;
+}
 a	{
 	color: #777;
 }
@@ -40,6 +52,9 @@ a:hover {
 }
 i {
 	padding: 5px;
+}
+i:hover {
+	color: #272e39;	
 }
 footer {
 	height: 50px;
