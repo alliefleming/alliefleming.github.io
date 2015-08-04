@@ -39,21 +39,27 @@
 		        <img class="hidden-xs" alt="Reply Copilot" src="images/reply-copilot-logo.svg" height="24">
 		      </a>
 				<ul class="nav navbar-nav">
-				  <li role="presentation"><a href="about.html">About</a></li>
-				  <li role="presentation"><a href="#">Resources</a></li>
+				  <li role="presentation"><a href="javascript:void(0);" data-toggle="modal" data-target="#aboutModal">About</a></li>
+				  <li role="presentation"><a href="resources/index.html">Resources</a></li>
 				</ul>
 		  </div>
 		</nav>
 	<div class="container">
 	    <div class="row">
-		    <div class="col-xs-12 col-">
-		    <h3 class="text-center">You have permission to reply.</h3>
-		    </div>
-	    </div>
-	    <div class="row">
 		    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-		    <p>generating response</p>
-		    <a class="btn btn-default" href="index.html" role="button">Generate Another Response</a>
+			    <h3 class="text-center">You have permission to reply.</h3>
+				<div class="panel panel-default">
+				  <!-- Panel contents External Links -->
+				  <div class="panel-heading">
+					  <h4>Your response</h4>
+				  </div>
+				  <div class="panel-body">
+					<ul class="text-black">
+						<p>generated response here</p>
+					</ul>
+				  </div>
+				</div>	
+				<button type="submit" class="btn btn-lg btn-success col-xs-12 ">Generate Response</button>
 		    </div>
 	    </div>
     </div>
@@ -68,16 +74,23 @@
 						<a href="https://www.facebook.com/replycopilot" target="_blank">
 							<i class="fa fa-lg fa-facebook-square"></i>
 						</a>
+						<a href="https://plus.google.com/u/0/105765359744046892959/posts" target="_blank">
+							<i class="fa fa-lg fa-google-plus-square"></i>
+						</a>
 					</p>
 				</div>
 				<div class="col-sm-6">
-					<p class="text-black text-right">Terms of Service</p>
+						<p class="text-navy text-right">
+							<a href="http://www.reviewtrackers.com/terms-service/" target="_blank" title="Reply Copilot Terms of Service">
+								Terms of Service
+							</a>
+						</p>
 				</div>
 			</div>
 		</div>
 	</footer>
+	  <script src="js/bootstrap.js"></script>
+	  <script src="js/bootstrap.min.js"></script>
+	  <script src="js/npm.js"></script>
   </body>
-  <script src="js/bootstrap.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/npm.js"></script>
 </html>
