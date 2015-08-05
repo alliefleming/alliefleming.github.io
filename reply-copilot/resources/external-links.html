@@ -32,21 +32,27 @@
 	<meta name="theme-color" content="#ffffff">
   </head>
   <body>
-	  <nav class="navbar navbar-default navbar-static-top">
+  	  <!-- Navigation -->
+	  <nav class="navbar navbar-default navbar-fixed-top">
 		  <div class="container">
 		      <a class="navbar-brand" href="../index.html">
 		        <img class="visible-xs" alt="Reply Copilot" src="../images/logo-icon-blue.svg" height="24">
 		        <img class="hidden-xs" alt="Reply Copilot" src="../images/reply-copilot-logo.svg" height="24">
 		      </a>
-				<ul class="nav navbar-nav">
+				<ul class="nav nav-pills">
 				  <li role="presentation"><a href="javascript:void(0);" data-toggle="modal" data-target="#aboutModal">About</a></li>
-				  <li role="presentation" class="active"><a href="index.html">Resources</a></li>
+				  <li role="presentation"><a href="index.html">Resources</a></li>
 				</ul>
 		  </div>
 		</nav>
+		<!-- End Navigation -->
 	<div class="container">
 	    <div class="row">
 		    <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+			<ol class="breadcrumb">
+			  <li><a href="index.html">Resources</a></li>
+			  <li class="active">External Links</li>
+			</ol>
 				<div class="panel panel-default">
 				  <!-- Panel contents External Links -->
 				  <div class="panel-heading">
@@ -54,9 +60,9 @@
 				  </div>
 				  <div class="panel-body">
 					<ul class="text-black">
-						<li>The 18 Word Response Ebook</li>
-						<li>Join Review Management Newsletter</li>
-						<li>Online Review Management [LINK TO REVIEWTRACKERS]</li>
+						<li><a href="http://www.reviewtrackers.com/the18wordresponse" target="_blank">The 18 Word Response Ebook</a></li>
+						<li><a href="http://www.reviewtrackers.com/Weekly-Newsletter" target="_blank">Join Review Management Newsletter</a></li>
+						<li><a href="http://www.reviewtrackers.com/" target="_blank">Online Review Management</a></li>
 					</ul>
 				  </div>
 				</div>	
@@ -66,11 +72,12 @@
 			<div class="spacer">&nbsp;</div>
 		</div>
     </div>
+	<!-- Footer -->
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-6">
-					<p class="text-blue text-left">
+				<div class="col-xs-6 col-sm-6">
+					<p class="text-left">
 						<a href="https://twitter.com/replycopilot" target="_blank">
 							<i class="fa fa-lg fa-twitter-square"></i>
 						</a>
@@ -82,18 +89,20 @@
 						</a>
 					</p>
 				</div>
-				<div class="col-sm-6">
-					<p class="text-navy text-right">
-						<a href="http://www.reviewtrackers.com/terms-service/" target="_blank" title="Reply Copilot Terms of Service">
-							Terms of Service
-						</a>
-					</p>
+				<div class="col-xs-6 col-sm-6">
+						<p class="text-navy text-right">
+							<a href="http://www.reviewtrackers.com/terms-service/" target="_blank" title="Reply Copilot Terms of Service">
+								Terms of Service
+							</a>
+						</p>
 				</div>
 			</div>
 		</div>
 	</footer>
-	  <script src="js/bootstrap.js"></script>
-	  <script src="js/bootstrap.min.js"></script>
-	  <script src="js/npm.js"></script>
+	<!-- End Footer -->
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
   </body>
 </html>
