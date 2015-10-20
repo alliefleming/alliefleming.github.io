@@ -1,0 +1,119 @@
+/* HTML BASIC */
+body {
+	background: linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(255, 255, 255, 0.45) 80%
+    ), url("../images/pizza-711670_1280.jpg"), no-repeat center;
+	font-family: 'Droid Serif', serif;
+	color: #666;
+/* 	background-position-y: -100px; */
+	background-size: cover;
+}
+h1 {
+	font-family: 'Pacifico', cursive;
+	font-size: 30pt;
+}
+h2 {
+	
+}
+h3 {
+	
+}
+h4 {
+	
+}
+p {
+	font-family: 'Droid Serif', serif;
+	font-size: 14px;
+	line-height: 130%;
+	margin-top: 0px;
+}
+a {
+	text-decoration: none;
+	color: red;
+}
+button {
+	margin: auto;
+	padding: 10px 20px 10px 20px;
+	width: 30%;
+	outline: none;
+	background-color: #009900;
+	border-radius: 4px;
+	border-style: none;
+	display: block;
+	font-family: 'Droid Serif', serif;
+	font-weight: 700;
+	font-size: 14px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+form {
+	text-align: center;
+}
+input {
+	padding: 8px;
+	border: solid #999 1px;
+	border-radius: 2px;
+	font-family: 'Droid Serif', serif;
+	font-size: 14px;
+	width: 30%;
+}
+i {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+/* HTML BASIC END*/
+
+/* CLASSES */
+.container {
+	width: 85%;
+	margin: auto;
+	padding: 10px;
+	font-family: 'Droid Serif', serif;
+	color: #666;
+}
+.center {
+	text-align:center;
+}
+.title {
+	font-size: 45pt;
+	line-height: 125%;
+	color: white;
+}
+.text-white {
+	color: #fff;
+}
+.footer {
+	font-size: 12px;
+	margin-bottom: 0px;
+	padding-top: 8px;
+}
+/* CLASSES END */
+
+/* UNIQUE ID */
+
+#footer {
+   position:fixed;
+   padding: 8px 0px 8px 0px;
+   left:0px;
+   bottom:0px;
+   height:35px;
+   width:100%;
+   background:#fff;
+   font-size: 12px;
+   letter-spacing: 1px;
+}
+#header {
+	width: 100%;
+	height: 45px;
+	color: #fff;
+	padding: 5px;
+	text-align: center;
+}
+
+/* UNIQUE ID END */
+
+/* FONTS */
+
+/* FONTS ENDS */
